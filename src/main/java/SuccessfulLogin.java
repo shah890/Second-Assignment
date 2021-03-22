@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
             driver.findElement(By.id("txtPassword")).click();
             driver.findElement(By.id("txtPassword")).sendKeys(Pass);
             driver.findElement(By.name("Submit")).click();
-            String validText = driver.findElement(By.id("Subscriber_link"));
+            String validText = driver.getTitle();
 
             return validText;
         }
